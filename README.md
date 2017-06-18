@@ -35,7 +35,7 @@ The instance generator was developed by Young *et al.* 2017 and it was originall
 
 ## Solutions
 
-The full results find by Young *et al.* 2017 can be found in the `results\` directory. 
+The full results found by Young *et al.* 2017 can be found in the `results\` directory. 
 
 *To be completed*
 
