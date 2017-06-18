@@ -21,7 +21,7 @@ Note, because we were unable to get in contact with the original creators of the
 
 ### Set 2
 
-This data set is a selection of the available benchmark instances used by the literature. For the full specification of the three subsets we refer you to Montoya *et al.* 2015.
+This data set is a selection of the available benchmark instances used by the literature. For the full specification of the three subsets we refer you to Montoya *et al.* 2014.
 
 * Set 2a: (**73.64% solved**) 110 instances with 20-51 activities, 2-8 skills and 5-14 resources.
 * Set 2b: (**81.82% solved**) 77 instances with 32-62 activities, 9-15 skills and 5-19 resources.
@@ -38,3 +38,9 @@ The instance generator was developed by Young *et al.* 2017 and it was originall
 The full results find by Young *et al.* 2017 can be found in the `results\` directory. 
 
 *To be completed*
+
+## References
+
+1. Kenneth D. Young, Andreas Schutt, Thibaut Feydy. Constraint Programming applied to the Multi-Skill Project Scheduling Problem. In *Proceedings of Principles and Practice of Constraint Programming - CP2017*, 2017.
+2. Almeida, B. F., Correia, I., Saldanha-da Gama, F. An instance generator for the multi-skill resource-constrained project scheduling problem, 2015.
+3. Montoya, C., Bellenguez-Morineau, O., Pinson, E., Rivreau, D. Branch-and-price approach for the multi-skill project scheduling problem. *Optimization Letters 8(5), 1721–1734*, 2014.
