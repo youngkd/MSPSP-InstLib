@@ -12,7 +12,7 @@ All instances can be found in the `instances\` directory. The instances are divi
 
 ### Set 1'
 
-This data set was generated using the instance generator. For the full specification of the two subsets generated we refer you to Almeida *et al.* 2016.
+This data set was generated using the instance generator. For the full specification of the two subsets generated we refer you to Almeida *et al.* 2015.
 
 * Set 1'a: (**100% solved**) 216 instances with 22 activities, 4 skills and 10-30 resources.
 * Set 1'b: (**12.5% solved**) 216 instances with 42 activities, 4 skills and 20-60 resources.
@@ -29,7 +29,7 @@ This data set is a selection of the available benchmark instances used by the li
 
 ## Instance Generator
 
-The instance generator was developed by Young *et al.* 2017 and it was originally created by Almeida *et al.* 2016.
+The instance generator was developed by Young *et al.* 2017 and it was originally created by Almeida *et al.* 2015.
 
 *To be completed*
 
