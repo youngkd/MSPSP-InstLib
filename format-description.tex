@@ -1,0 +1,243 @@
+% Data61 Summer Internship
+% DataZinc Format Description
+% Kenneth Young
+
+\documentclass[12pt]{article}
+
+\usepackage[english]{babel}
+\usepackage{latexsym,amssymb,amsmath,epsfig,amsfonts,graphicx,url,verbatim}
+\usepackage{float}
+%\usepackage{xcolor}
+\usepackage[pdftex,usenames,dvipsnames]{color}
+\usepackage{multicol,multirow}
+\usepackage{authblk}
+\usepackage{chngpage}
+\usepackage{mathrsfs}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{subfig}
+\usepackage{xspace}
+
+\definecolor{ForestGreen}{RGB}{34,106,46}
+
+\setlength{\topmargin}{-15pt}
+\setlength{\headsep}{20pt}
+\setlength{\headheight}{14.5pt}
+\setlength{\textheight}{600pt}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\textwidth}{460pt}
+\setlength{\parskip}{.30cm}
+\parskip=10pt
+
+\interdisplaylinepenalty=1000
+
+
+%----------------------------------------------%
+% Syntax highlighting for MiniZinc in listings %
+%----------------------------------------------%
+
+\definecolor{lightgray}{rgb}{0.97, 0.97, 0.97}
+
+\lstdefinelanguage{minizinc}{
+    morekeywords={
+        %% MiniZinc keywords
+        %%
+        ann, annotation, any, array, assert,
+        bool,
+        constraint,
+        else, elseif, endif, enum, exists,
+        float, forall, function,
+        if, in, include, int,
+        list,
+        minimize, maximize,
+        of, op, output,
+        par, predicate,
+        record,
+        set, solve, string,
+        test, then, tuple, type,
+        var,
+        where,
+        %% MiniZinc functions
+        %%
+        abort, abs, acosh, array_intersect, array_union,
+        array1d, array2d, array3d, array4d, array5d, array6d, asin, assert, atan,
+        bool2int,
+        card, ceil, combinator, concat, cos, cosh,
+        dom, dom_array, dom_size, dominance,
+        exp,
+        fix, floor,
+        index_set, index_set_1of2, index_set_2of2, index_set_1of3, index_set_2of3, index_set_3of3,
+        int2float, is_fixed,
+        join,
+        lb, lb_array, length, let, ln, log, log2, log10,
+        min, max,
+        pow, product,
+        round,
+        set2array, show, show_int, show_float, sin, sinh, sqrt, sum,
+        tan, tanh, trace,
+        ub, and ub_array,
+        %% Search keywords
+        %%
+        bool_search, int_search, seq_search, priority_search,
+        %% MiniSearch keywords
+        %%
+        minisearch, search, while, repeat, next, commit, print, post, sol, scope, time_limit, break, fail
+    },
+    sensitive=true, % are the keywords case sensitive
+    morecomment=[l][\em\color{ForestGreen}]{\%},
+    %morecomment=[s]{/*}{*/},
+    morestring=[b]",
+}
+
+%% Settings for listings
+%%
+\lstset{ %
+    backgroundcolor=\color{lightgray},  % choose the background color; you must add
+                                        % \usepackage{color} or \usepackage{xcolor}
+    basicstyle=\scriptsize\ttfamily,    % the size of the fonts that are used for the code
+    belowskip=-2em,
+    breakatwhitespace=false,            % sets if automatic breaks should only happen at whitespace
+    breaklines=true,                    % sets automatic line breaking
+    captionpos=b,                       % sets the caption-position to bottom
+    commentstyle=\color{ForestGreen},   % comment style
+    %deletekeywords={...},              % if you want to delete keywords from the given language
+    escapeinside={\%*}{*)},             % if you want to add LaTeX within your code
+    extendedchars=true,                 % lets you use non-ASCII characters; for 8-bits
+                                        % encodings only, does not work with UTF-8
+    frame=single,                       % adds a frame around the code
+    keepspaces=true,                    % keeps spaces in text, useful for keeping indentation
+                                        % of code (possibly needs columns=flexible)
+    keywordstyle=\bfseries\color{blue}, % keyword style
+    language=minizinc,                  % the language of the code
+    %morekeywords={*,...},              % if you want to add more keywords to the set
+    numbers=none,                       % where to put the line-numbers; possible values are (none, left, right)
+    %numbersep=5pt,                     % how far the line-numbers are from the code
+    %numberstyle=\tiny\color{Gray},     % the style that is used for the line-numbers
+    rulecolor=\color{black},            % if not set, the frame-color may be changed
+                                        % on line-breaks within not-black text (e.g. comments (green here))
+    showspaces=false,                   % show spaces everywhere adding particular
+                                        % underscores; it overrides 'showstringspaces'
+    showstringspaces=false,             % underline spaces within strings only
+    showtabs=false,                     % show tabs within strings adding particular underscores
+    %stepnumber=1,                      % the step between two line-numbers. If it's 1, each line will be numbered
+    stringstyle=\color{Red},            % string literal style
+    tabsize=2,                          % sets default tabsize to 2 spaces
+    title=\lstname                      % show the filename of files included with \lstinputlisting;
+                                        % also try caption instead of title
+}
+
+%\def\mzninline{\lstinline[basicstyle=\ttfamily,annotationstyle=\normalfont]}
+\def\mzninline{\verb}
+
+
+\begin{document}
+
+\section{DataZinc Format Description}
+
+This document describes the formatting of one of the DataZinc (dzn) files
+that store all the data required to fully specify an instance of
+the MSPSP.
+
+Each dzn file contains the following:
+\begin{itemize}
+    \item {\tt seed}: Seed used for the randomisation. Integer between 1,000,000 and 9,999,999.
+    \item {\tt mint}: Lower bound on the total project duration. Na\"{i}vely calculated using 
+        the length of the critical path.
+    \item {\tt maxt}: Upper bound on the total project duration. Na\"{i}vely calculated using
+        as the sum of all the processing times.
+    \item {\tt nActs}: Total number of activites. Includes the dummy start and end activities.
+    \item {\tt dur}: Duration/processing time of each activity. Stored as an $1\times n$ array.
+    \item {\tt nSkills}: Total number of skills.
+    \item {\tt sreq}: Skill requirement for each activity. Stored as an $n\times l$ array. If entry
+    $(i,j)=0$ then activity $i$ does not require any resources mastering skill $j$.
+    \item {\tt nResources}: Total number of resources.
+    \item {\tt mastery}: Skills each resource has mastered. Stored as an $m\times l$ array containing
+    either {\tt true} or {\tt false}.
+    \item {\tt nPrecs}: Total number of precedence relations. Define this as $(|E|)$.
+    \item {\tt pred}: A $1\times |E|$ array storing the predecessor for each precedence relation.
+    \item {\tt succ}: A $1\times |E|$ array storing the successor for each precedence relation.
+\end{itemize}
+
+The following items are pieces of data that can be derived from the basic 
+data specified above.
+We decided to compute these in a preprocessing step and store it in the data file to 
+improve the solve times.
+\begin{itemize}
+    \item {\tt nUnrels}: Total number of unrelated activity pairs. Define this as $(|U|)$.
+    \item {\tt unpred}: A $1\times |U|$ array storing the first activity for each unrelated pair.
+    \item {\tt unsucc}: A $1\times |U|$ array storing the second activity for each unrelated pair.
+    \item {\tt USEFUL\_RES}: A $n\times 1$ array storing the set of useful resources for each activity.
+        I.e. the set of all resources mastering a skill this activities requires.
+    \item {\tt POTENTIAL\_ACT}: A $m\times 1$ array storing the set of potential activities for each resource.
+        I.e. the set of all activities that each resource could feasibly be assigned.
+\end{itemize}
+
+Lastly, the instances of set 2 and 3 also store one extra piece of derived data:
+\begin{itemize}
+    \item {\tt SumOfsreq}: Sum of the skill requirements of all activities. This can
+        be useful for doing analysis on the complexity of an instance.
+\end{itemize}
+
+We now give a simple example of a DataZinc file with 8 activities, 2 skills and 7 resources:\\[3pt]
+File path = {\tt /instances/set-3/set-3a/}\\[3pt]
+File name = {\tt inst\_set3a\_sf0\_nc1.8\_n6\_l2\_m7\_00.dzn}\\[3pt]
+Contents:
+
+\begin{lstlisting}[language=minizinc]
+% seed = 0
+
+mint = 14;
+% maxt = 24;
+
+nActs = 8;
+dur = [0,2,4,2,8,4,4,0];
+
+nSkills = 2;
+sreq = [| 0,0,
+    | 0,3,
+    | 1,2,
+    | 2,0,
+    | 1,0,
+    | 3,0,
+    | 1,2,
+    | 0,0, |];
+
+% SumOfsreq = 15;
+
+nResources = 7;
+mastery = [| true,true,
+    | false,true,
+    | false,true,
+    | true,false,
+    | true,false,
+    | true,true,
+    | false,true, |];
+
+nPrecs = 11;
+pred = [1,2,2,2,3,3,4,4,5,6,7];
+succ = [2,3,5,6,4,6,6,7,7,8,8];
+
+nUnrels = 4;
+unpred = [3,4,5,6];
+unsucc = [5,5,6,7];
+
+USEFUL_RES = [{},
+    {1,2,3,6,7},
+    {1,2,3,4,5,6,7},
+    {1,4,5,6},
+    {1,4,5,6},
+    {1,4,5,6},
+    {1,2,3,4,5,6,7},
+    {}];
+
+POTENTIAL_ACT = [{2,3,4,5,6,7},
+    {2,3,7},
+    {2,3,7},
+    {3,4,5,6,7},
+    {3,4,5,6,7},
+    {2,3,4,5,6,7},
+    {2,3,7}];
+\end{lstlisting}
+
+\end{document}
