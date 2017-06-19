@@ -8,7 +8,7 @@ Each instance is provided as an individual DataZinc file (dzn) which are natural
 
 We note that in each data file the number of activities (denoted *n*) does not include the dummy start and end activities. So n=20 corresponds to a total of 22 activities.
 
-For a detailed description of the format within any one DataZinc file we refer you to `.\format-description.pdf` (*to be completed*).
+For a detailed description of the format within any one DataZinc file we refer you to `.\format-description.pdf`.
 
 ## Instances
 
