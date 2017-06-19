@@ -1,4 +1,4 @@
-# Multi-Skill Project Scheduling Problem Instance Library
+# MSPSP Instance Library
 
 Library of instances of the Multi-Skill Project Scheduling Problem (MSPSP).
 
