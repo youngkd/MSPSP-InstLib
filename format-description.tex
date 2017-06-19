@@ -147,6 +147,7 @@ Each dzn file contains the following:
     \item {\tt maxt}: Upper bound on the total project duration. Na\"{i}vely calculated using
         as the sum of all the processing times.
     \item {\tt nActs}: Total number of activites. Includes the dummy start and end activities.
+        Note, the $n$ value in an instance's file name does not include the dummy start and end activities.
     \item {\tt dur}: Duration/processing time of each activity. Stored as an $1\times n$ array.
     \item {\tt nSkills}: Total number of skills.
     \item {\tt sreq}: Skill requirement for each activity. Stored as an $n\times l$ array. If entry
@@ -179,7 +180,10 @@ Lastly, the instances of set 2 and 3 also store one extra piece of derived data:
         be useful for doing analysis on the complexity of an instance.
 \end{itemize}
 
-We now give a simple example of a DataZinc file with 8 activities, 2 skills and 7 resources:\\[3pt]
+We now give a simple example of a DataZinc file with 8 activities, 2 skills and 7 resources.
+Note, that the $n$ value in the file name of the instance does not include the 
+dummy start and end activities, whereas the $n$ value within the dzn file (i.e. {\tt nActs})
+does include these 2 dummy activities. Hence, these numbers differ by 2.\\[3pt]
 File path = {\tt /instances/set-3/set-3a/}\\[3pt]
 File name = {\tt inst\_set3a\_sf0\_nc1.8\_n6\_l2\_m7\_00.dzn}\\[3pt]
 Contents:

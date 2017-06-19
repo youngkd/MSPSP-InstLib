@@ -3,8 +3,8 @@
 Library of instances of the Multi-Skill Project Scheduling Problem (MSPSP).
 
 The MSPSP is a relatively new variant on the classical Resource Constrained Project Scheduling Problem
-(RCPSP) with the additional consideration of multi-skill resources.
-This introduces a set of assignment decisions, further to the usual
+(RCPSP) with the additional consideration of multi-skilled resources.
+This consideration introduces a set of assignment decisions, further to the usual
 scheduling decisions, which result in a non-trivial layer of complexity.
 
 This library provides all instances used in the computational experiments of a 
@@ -18,23 +18,23 @@ naturally compability with the modelling language MiniZinc.
 New instances can be created in any desired format by editting the 
 instance generator as you see fit (refer to Python scripts in the `gen-inst\` directory).
 
-We note that in each data file the number of activities (denoted *n*) 
-does not include the dummy start and end activities. 
-So n=20 corresponds to a total of 22 activities.
-
 For a detailed description of the format within any one DataZinc 
-file we refer you to `.\format-description.pdf`.
+file we refer you to `format-description.pdf`.
 
 ## Instances
 
 All instances can be found in the `instances\` directory. 
-The instances are divided into two primary sets, 
-which are further divided into a total of five subsets.
+The instances are divided into three primary sets, 
+which are further divided into a total of eight subsets.
+Only set 1 and set 2 have been tested.
 
 ### Set 1'
 
 This data set was generated using the instance generator. 
-For the full specification of the two subsets generated we refer you to Almeida *et al.* 2015.
+A full specification of the two subsets generated is given in the directory
+`instances/set-1/`.
+We also refer you to Almeida *et al.* 2015 where an equivalent set of data
+was originally created.
 
 * Set 1'a: (**100% solved**) 216 instances with 22 activities, 4 skills and 10-30 resources.
 * Set 1'b: (**12.5% solved**) 216 instances with 42 activities, 4 skills and 20-60 resources.
@@ -47,7 +47,8 @@ If the original data set is denoted by Set 1, we denote our equivalent data set 
 ### Set 2
 
 This data set is a selection of the available benchmark instances used by the literature. 
-For the full specification of the three subsets we refer you to Montoya *et al.* 2014.
+For the full specification of the three subsets, including their origin, we refer you to Montoya *et al.* 2014.
+Set 2 can be considered as a selection of small and medium sized instances of the MSPSP.
 
 * Set 2a: (**73.64% solved**) 110 instances with 20-51 activities, 2-8 skills and 5-14 resources.
 * Set 2b: (**81.82% solved**) 77 instances with 32-62 activities, 9-15 skills and 5-19 resources.
@@ -59,10 +60,11 @@ The remaining benchmark instances that were made available to us from the
 literature which have not yet been tested.
 
 These instances are organised in the same way as set 2 as they have been 
-adapted from the same instances of the RCPSP, 
-but their parameters fall outside the ranges considered by Montoya *et al.*. 
-As such, each subset of set 3 contains instances with a very small or v
-ery large number of activities/skills/resources. 
+adapted from the same instances of the RCPSP.
+However, their parameter values fall outside the ranges considered by Montoya *et al*
+in set 2.
+As such, each subset of set 3 contains instances with a very small or 
+very large number of activities/skills/resources. 
 Even though these instances have as yet been untested, 
 we anticipate that the very small instances can be trivially solved.
 
