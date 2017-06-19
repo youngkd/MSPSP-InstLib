@@ -27,7 +27,7 @@ Project scheduling with flexible resources: formualtions and inequalities (2012)
 We note that the modified resource strength is calculated
 by the equation:
 
-*MRS = (10* x *m)/(SF* x *l* x *n* x * n)*
+*MRS = (10* x *m)/(SF* x *l* x *n* x *n)*
 
 when SF=variable, we use the value 0.75 as an approximate average.
 
