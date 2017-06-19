@@ -19,17 +19,17 @@ The next Table summarises each of the subsets of set 1:
 | # Resources an Activity Requires | {1, 2, 3} | {1, 2, 3, 4, 5, 6, 7} |
 | # Skills a Resource Masters | {1, 2, 3, 4} | {1, 2, 3, 4} |
 
-The next Table defines the Modified Resource Strength vsalues for each subset.
+The next Table defines the Modified Resource Strength values for each subset.
 For a full description of the MRS and its meaning we refer to the 
 paper where this complexity measure was introduced: Correia *et al.*,
-Project scheduling with flexible resources: formualtions and inequalities (2012).
+Project scheduling with flexible resources: formulations and inequalities (2012).
 
 We note that the modified resource strength is calculated
 by the equation:
 
 *MRS = (10* x *m)/(SF* x *l* x *n* x *n)*
 
-when SF=variable, we use the value 0.75 as an approximate average.
+when SF=variable, the value 0.75 is used as an approximate average.
 
 |   |   | Set 1a |   |   | Set 1b |   |   |
 |---|---|--------|---|---|--------|---|---|
