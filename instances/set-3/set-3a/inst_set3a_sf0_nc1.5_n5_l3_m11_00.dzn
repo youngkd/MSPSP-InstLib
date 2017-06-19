@@ -1,0 +1,59 @@
+% seed = 0
+
+mint = 6;
+% maxt = 10;
+
+nActs = 7;
+dur = [0,1,2,2,3,2,0];
+
+nSkills = 3;
+sreq = [| 0,0,0,
+	| 2,2,1,
+	| 0,2,1,
+	| 0,3,0,
+	| 0,1,0,
+	| 1,1,0,
+	| 0,0,0, |];
+
+% SumOfsreq = 14;
+
+nResources = 11;
+mastery = [| true,false,false,
+	| true,true,false,
+	| true,true,false,
+	| true,true,true,
+	| false,false,true,
+	| true,false,false,
+	| false,true,false,
+	| false,false,true,
+	| false,false,true,
+	| false,true,false,
+	| false,true,false, |];
+
+nPrecs = 8;
+pred = [1,1,2,2,3,4,5,6];
+succ = [2,3,4,5,6,7,6,7];
+
+nUnrels = 5;
+unpred = [2,3,3,4,4];
+unsucc = [3,4,5,5,6];
+
+USEFUL_RES = [{},
+	{1,2,3,4,5,6,7,8,9,10,11},
+	{2,3,4,5,7,8,9,10,11},
+	{2,3,4,7,10,11},
+	{2,3,4,7,10,11},
+	{1,2,3,4,6,7,10,11},
+	{}];
+
+POTENTIAL_ACT = [{2,6},
+	{2,3,4,5,6},
+	{2,3,4,5,6},
+	{2,3,4,5,6},
+	{2,3},
+	{2,6},
+	{2,3,4,5,6},
+	{2,3},
+	{2,3},
+	{2,3,4,5,6},
+	{2,3,4,5,6}];

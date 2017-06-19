@@ -1,0 +1,59 @@
+% seed = 0
+
+mint = 14;
+% maxt = 24;
+
+nActs = 8;
+dur = [0,2,4,2,8,4,4,0];
+
+nSkills = 8;
+sreq = [| 0,0,0,0,0,0,0,0,
+	| 1,1,0,1,2,0,0,0,
+	| 0,1,0,0,2,0,0,1,
+	| 4,0,0,0,1,0,0,0,
+	| 2,1,0,0,0,1,0,0,
+	| 1,1,0,1,1,0,1,0,
+	| 0,1,0,1,0,0,1,0,
+	| 0,0,0,0,0,0,0,0, |];
+
+% SumOfsreq = 26;
+
+nResources = 10;
+mastery = [| false,false,true,false,false,true,false,true,
+	| false,false,true,false,true,true,true,false,
+	| false,false,false,false,true,false,true,true,
+	| true,true,true,false,false,false,true,false,
+	| true,true,false,false,false,false,true,false,
+	| false,false,false,true,false,true,true,true,
+	| false,false,false,false,true,false,false,true,
+	| false,true,true,false,false,false,true,true,
+	| true,true,false,false,false,false,false,false,
+	| true,false,false,true,false,true,true,false, |];
+
+nPrecs = 11;
+pred = [1,2,2,2,3,3,4,4,5,6,7];
+succ = [2,3,5,6,4,6,6,7,7,8,8];
+
+nUnrels = 4;
+unpred = [3,4,5,6];
+unsucc = [5,5,6,7];
+
+USEFUL_RES = [{},
+	{2,3,4,5,6,7,8,9,10},
+	{1,2,3,4,5,6,7,8,9},
+	{2,3,4,5,7,9,10},
+	{1,2,4,5,6,8,9,10},
+	{2,3,4,5,6,7,8,9,10},
+	{2,3,4,5,6,8,9,10},
+	{}];
+
+POTENTIAL_ACT = [{3,5},
+	{2,3,4,5,6,7},
+	{2,3,4,6,7},
+	{2,3,4,5,6,7},
+	{2,3,4,5,6,7},
+	{2,3,5,6,7},
+	{2,3,4,6},
+	{2,3,5,6,7},
+	{2,3,4,5,6,7},
+	{2,4,5,6,7}];
