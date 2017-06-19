@@ -14,12 +14,12 @@ The next Table summarises each of the subsets of set 1:
 | # Skills | 4 | 4 |
 | # Resources | 10-30 | 20-60 |
 | Network Complexity (NC) | {1.5, 1.8, 2.1} | {1.5, 1.8, 2.1} |
-| Skill Factor (SF) | {1,0.75,0.5,variable} | {1,0.75,0.5,variable} |
+| Skill Factor (SF) | {1, 0.75, 0.5, variable} | {1, 0.75, 0.5, variable} |
 | Modified Resource Strength (MRS) | Listed below | ... |
-| # Resources an Activity Requires | {1,2,3} | {1,2,3,4,5,6,7} |
-| # Skills a Resource Masters | {1,2,3,~4} | {1,2,3,4} |
+| # Resources an Activity Requires | {1, 2, 3} | {1, 2, 3, 4, 5, 6, 7} |
+| # Skills a Resource Masters | {1, 2, 3, 4} | {1, 2, 3, 4} |
 
-The next Table defines the Modified Resource Strength Values for each subset.
+The next Table defines the Modified Resource Strength vsalues for each subset.
 For a full description of the MRS and its meaning we refer to the 
 paper where this complexity measure was introduced: Correia *et al.*,
 Project scheduling with flexible resources: formualtions and inequalities (2012).
