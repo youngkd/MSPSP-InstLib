@@ -1,9 +1,15 @@
-# Set 1
+# Set 1'
 
 Instances created using the generator, which were made to be equivalent (excluding inherent randomisation) to those created by Almeida *et al.* 2015.
 
 * Set 1'a: (**100% solved**) 216 instances with 22 activities, 4 skills and 10-30 resources.
 * Set 1'b: (**12.5% solved**) 216 instances with 42 activities, 4 skills and 20-60 resources.
+
+
+Note, because we were unable to get in contact with the original 
+creators of the instance generator and access their data, 
+we instead generated our own set of instances with identical input parameters as their benchmark data. 
+If the original data set is denoted by Set 1, we denote our equivalent data set by Set 1'.
 
 The next Table summarises each of the subsets of set 1:
 

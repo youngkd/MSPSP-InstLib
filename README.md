@@ -11,19 +11,19 @@ This library provides all instances used in the computational experiments of a
 2017 research paper as well as the author's full-results.
 Some additional untested instances (set 3) are also included in this library.
 
-## Format
+## Data Format
 
 Each instance is provided as an individual DataZinc file (dzn) which are 
 naturally compability with the modelling language MiniZinc. 
 New instances can be created in any desired format by editting the 
-instance generator as you see fit (refer to Python scripts in the `gen-inst\` directory).
+instance generator as you see fit (refer to Python scripts in the `gen-inst/` directory).
 
 For a detailed description of the format within any one DataZinc 
 file we refer you to `format-description.pdf`.
 
 ## Instances
 
-All instances can be found in the `instances\` directory. 
+All instances can be found in the `instances/` directory. 
 The instances are divided into three primary sets, 
 which are further divided into a total of eight subsets.
 Only set 1 and set 2 have been tested.
@@ -38,11 +38,6 @@ was originally created.
 
 * Set 1'a: (**100% solved**) 216 instances with 22 activities, 4 skills and 10-30 resources.
 * Set 1'b: (**12.5% solved**) 216 instances with 42 activities, 4 skills and 20-60 resources.
-
-Note, because we were unable to get in contact with the original 
-creators of the instance generator and access their data, 
-we instead generated our own set of instances with identical input parameters as their benchmark data. 
-If the original data set is denoted by Set 1, we denote our equivalent data set by Set 1'.
 
 ### Set 2
 
@@ -72,7 +67,7 @@ we anticipate that the very small instances can be trivially solved.
 * Set 3b: (**untested**) 112 instances with 32-122 activities, 9-15 skills and 5-34 resources.
 * Set 3c: (**untested**) 109 instances with 22-92 activities, 3-15 skills and 4-15 resources.
 
-The instances from set 3b and 3c with 92 and 122 activities are currently the most difficult in this library.
+<!-- The instances from set 3b and 3c with 92 and 122 activities are likely the most difficult in this library. -->
 
 ## Instance Generator
 
@@ -82,7 +77,7 @@ The instance generator was developed by Young *et al.* 2017 and it was originall
 
 ## Solutions
 
-The full results found by Young *et al.* 2017 can be found in the `results\` directory. 
+The full results found by Young *et al.* 2017 can be found in the `results/` directory. 
 
 *To be completed*
 
