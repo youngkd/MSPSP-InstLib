@@ -28,7 +28,7 @@ The instances are divided into three primary sets,
 which are further divided into a total of eight subsets.
 Only set 1 and set 2 have been tested.
 
-### [Set 1'](./instances/set-1/)'
+### [Set 1'](./instances/set-1/)
 
 This data set was generated using the instance generator. 
 A partial specification of the two subsets generated is given in the directory
