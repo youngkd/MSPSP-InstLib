@@ -28,18 +28,18 @@ The instances are divided into three primary sets,
 which are further divided into a total of eight subsets.
 Only set 1 and set 2 have been tested.
 
-### Set 1'
+### [Set 1'](./instances/set-1/)'
 
 This data set was generated using the instance generator. 
-A full specification of the two subsets generated is given in the directory
+A partial specification of the two subsets generated is given in the directory
 `instances/set-1/`.
-We also refer you to Almeida *et al.* 2015 where an equivalent set of data
+We refer you to Almeida *et al.* 2015 for a detailed specification where an equivalent set of data
 was originally created.
 
 * Set 1'a: (**100% solved**) 216 instances with 22 activities, 4 skills and 10-30 resources.
 * Set 1'b: (**12.5% solved**) 216 instances with 42 activities, 4 skills and 20-60 resources.
 
-### Set 2
+### [Set 2](./instances/set-2/)
 
 This data set is a selection of the available benchmark instances used by the literature. 
 For the full specification of the three subsets, including their origin, we refer you to Montoya *et al.* 2014.
@@ -49,14 +49,14 @@ Set 2 can be considered as a selection of small and medium sized instances of th
 * Set 2b: (**81.82% solved**) 77 instances with 32-62 activities, 9-15 skills and 5-19 resources.
 * Set 2c: (**100% solved**) 91 instances with 22-32 activities, 3-12 skills and 4-15 resources.
 
-### Set 3
+### [Set 3](./instances/set-3/)
 
-The remaining benchmark instances that were made available to us from the 
-literature which have not yet been tested.
+This set contains the remaining benchmark instances that were made available to us from the 
+literature.
 
 These instances are organised in the same way as set 2 as they have been 
 adapted from the same instances of the RCPSP.
-However, their parameter values fall outside the ranges considered by Montoya *et al*
+However, their parameter values fall outside the ranges considered by Montoya *et al.*
 in set 2.
 As such, each subset of set 3 contains instances with a very small or 
 very large number of activities/skills/resources. 
