@@ -16,9 +16,9 @@ The next Table summarises each of the subsets of set 1:
 |    | Set 1a | Set 1b |
 |---:|--------|--------|
 | # Instances | 216 | 216 |
-| # Activities | 22 | 42 |
-| # Skills | 4 | 4 |
-| # Resources | 10-30 | 20-60 |
+| # Activities (*n*) | 22 | 42 |
+| # Skills (*l*) | 4 | 4 |
+| # Resources (*m*) | 10-30 | 20-60 |
 | Network Complexity (NC) | {1.5, 1.8, 2.1} | {1.5, 1.8, 2.1} |
 | Skill Factor (SF) | {1, 0.75, 0.5, variable} | {1, 0.75, 0.5, variable} |
 | Modified Resource Strength (MRS) | Listed below | ... |
