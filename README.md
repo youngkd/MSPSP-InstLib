@@ -83,6 +83,6 @@ The full results found by Young *et al.* 2017 can be found in the `results/` dir
 
 ## References
 
-1. Kenneth D. Young, Andreas Schutt, Thibaut Feydy. Constraint Programming applied to the Multi-Skill Project Scheduling Problem. In *Proceedings of Principles and Practice of Constraint Programming - CP2017*, 2017.
+1. Kenneth D. Young, Thibaut Feydy, Andreas Schutt. Constraint Programming applied to the Multi-Skill Project Scheduling Problem. In *Proceedings of Principles and Practice of Constraint Programming - CP2017*, 2017.
 2. Almeida, B. F., Correia, I., Saldanha-da Gama, F. An instance generator for the multi-skill resource-constrained project scheduling problem, 2015.
 3. Montoya, C., Bellenguez-Morineau, O., Pinson, E., Rivreau, D. Branch-and-price approach for the multi-skill project scheduling problem. *Optimization Letters 8(5), 1721–1734*, 2014.
