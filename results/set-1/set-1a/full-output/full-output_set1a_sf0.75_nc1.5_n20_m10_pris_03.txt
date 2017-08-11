@@ -1,0 +1,49 @@
+makespan = 100
+start times = [0, 0, 9, 14, 15, 15, 24, 25, 33, 37, 37, 45, 48, 55, 58, 68, 76, 78, 87, 89, 93, 100]
+assignment = [false, false, false, false, false, false, false, false, false, false, true, false, false, true, true, true, true, true, true, true, true, true, false, true, true, false, false, false, false, false, false, true, true, true, true, true, true, false, true, true, false, true, false, true, true, true, false, false, false, false, false, false, true, false, false, false, true, false, false, true, false, true, true, true, true, false, true, false, false, false, false, true, true, true, true, true, true, false, true, true, true, true, true, true, true, false, true, false, true, false, true, true, false, false, true, false, true, false, false, false, false, false, true, true, false, true, false, false, true, true, false, true, false, true, true, true, true, false, true, false, true, true, true, true, true, false, true, false, true, true, false, true, true, true, true, true, true, false, false, false, false, true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, false, true, false, false, true, false, false, true, true, false, true, false, true, true, true, false, false, true, true, false, true, false, true, false, true, true, true, true, true, true, false, false, false, true, true, true, true, true, true, true, false, false, false, false, true, true, true, false, true, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false]
+contribution = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, true, false, true, false, false, false, false, false, false, true, false, false, true, false, false, false, false, true, false, false, false, true, false, false, true, false, false, true, false, false, false, false, false, false, true, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, true, false, false, false, false, false, false, true, true, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, true, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, true, false, false, false, false, false, false, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, true, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, true, false, false, false, false, true, false, false, true, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, true, false, false, true, false, false, true, false, false, false, true, false, false, false, true, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, false, false, false, true, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, true, false, false, false, false, false, false, true, false, false, false, false, false, false, true, true, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, false, false, false, true, false, false, true, false, false, false, true, false, false, false, true, false, false, false, false, true, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, true, false, false, false, true, false, false, true, false, false, false, false, false, false, true, true, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, true, false, false, false, false, true, false, false, true, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, true, false, false, true, false, false, true, false, false, false, true, false, false, true, false, false, false, false, true, false, false, true, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, true, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, true, false, false, true, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, true, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, false, false, false, true, false, false, true, false, false, false, true, false, false, true, false, false, false, false, false, true, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, true, false, false, true, false, false, false, true, false, false, true, false, false, false, false, true, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+----------
+% time elapsed: 50 ms
+==========
+
+888 vars (0 no lits, 888 eager lits, 0 lazy lits)
+899 propagators
+7428 conflicts
+26852 nodes
+2295301 propagations
+1 solutions
+0.05 seconds init time
+0.00 seconds opt time
+0.61 seconds search time
+0.00Mb base memory usage
+0.02Mb trail memory usage
+0.00Mb peak memory usage
+1489298768 random seed used
+
+10690 SAT variables
+3458 orig bin clauses
+829 orig tern clauses
+0 orig long clauses (avg. len. 0.00)
+7337 learnt clauses (avg. len. 59.49)
+3000630 SAT propagations
+18238 back jumps
+55 natural restarts
+simplex = 0
+refactors = 0
+% Cumulative propagator statistics:
+%	#TT incons.: 72
+%	#TT prop.: 15453
+% Cumulative propagator statistics:
+%	#TT incons.: 31
+%	#TT prop.: 2544
+% Cumulative propagator statistics:
+%	#TT incons.: 0
+%	#TT prop.: 0
+% Cumulative propagator statistics:
+%	#TT incons.: 482
+%	#TT prop.: 25239
+% Cumulative propagator statistics:
+%	#TT incons.: 196
+%	#TT prop.: 8881
+%	#TTEF incons.: 3
+%	#TTEF prop.: 173

@@ -1,0 +1,64 @@
+makespan = 28
+start times = [0, 0, 0, 4, 4, 8, 4, 9, 6, 13, 12, 14, 16, 16, 7, 18, 22, 21, 24, 26, 24, 28]
+assignment = [false, false, false, false, true, false, false, false, false, true, true, true, false, true, false, false, true, false, false, true, true, false, false, false, false, false, true, false, false, false, false, true, false, true, true, false, false, false, true, false, true, true, false, false, true, true, false, true, true, false, false, false, false, true, false, true, false, true, true, false, false, true, true, false, false, false, false, true, false, true, true, false, true, true, false, false, true, true, false, true, false, false, true, true, false, false, false, false]
+contribution = [false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, true, false, false, false, false, true, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, true, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, true, false, false, true, false, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, true, false, false, false, false, true, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, true, false, false, true, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, true, false, true, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false]
+----------
+% time elapsed: 18 ms
+makespan = 27
+start times = [0, 0, 0, 4, 4, 8, 4, 9, 6, 13, 14, 12, 14, 16, 7, 18, 20, 21, 22, 24, 26, 27]
+assignment = [false, false, false, false, true, false, false, false, false, true, true, true, false, true, false, false, true, false, false, true, true, false, false, false, false, false, true, false, false, false, false, true, false, true, true, false, false, false, false, true, true, true, false, false, true, true, true, false, false, false, true, false, true, true, false, false, false, true, true, false, true, true, false, false, false, false, false, true, true, true, false, false, false, false, true, true, true, true, false, true, true, false, true, false, false, false, false, false]
+contribution = [false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, true, false, false, false, false, true, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, true, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, true, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, true, false, false, false, false, false, true, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, true, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, true, false, true, false, false, false, false, false, true, false, true, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+----------
+% time elapsed: 19 ms
+makespan = 26
+start times = [0, 0, 0, 4, 4, 8, 4, 9, 6, 16, 14, 12, 16, 14, 7, 21, 22, 16, 24, 19, 24, 26]
+assignment = [false, false, false, false, true, false, false, false, false, true, true, true, false, true, false, false, true, false, false, true, true, false, false, false, false, false, true, false, false, false, false, true, false, true, true, false, false, false, false, true, true, true, false, false, true, true, true, false, true, false, false, false, false, false, true, true, false, true, true, false, false, true, true, false, false, false, false, true, false, true, true, false, true, true, false, false, false, true, true, true, false, false, true, true, false, false, false, false]
+contribution = [false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, true, false, false, false, false, true, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, true, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, true, false, true, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, false, true, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, true, false, false, true, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, true, false, false, false, false, false, false, false, true, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false]
+----------
+% time elapsed: 22 ms
+makespan = 25
+start times = [0, 0, 0, 4, 4, 8, 4, 14, 6, 20, 10, 8, 14, 12, 10, 20, 20, 15, 23, 18, 23, 25]
+assignment = [false, false, false, false, true, false, false, false, false, true, true, true, false, true, false, false, true, false, false, true, true, false, false, false, false, false, true, false, false, false, false, true, false, true, true, false, true, false, false, false, true, false, false, true, false, true, true, true, true, false, false, false, true, false, false, true, false, true, true, false, false, true, true, false, false, false, false, true, false, true, true, false, true, true, false, false, false, true, true, true, false, false, true, true, false, false, false, false]
+contribution = [false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, true, false, false, false, false, true, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, true, false, false, true, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, true, false, false, false, false, true, false, false, true, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, true, false, false, false, false, true, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, true, false, false, true, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, true, false, false, false, false, false, false, false, true, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false]
+----------
+% time elapsed: 29 ms
+==========
+
+391 vars (0 no lits, 391 eager lits, 0 lazy lits)
+576 propagators
+164 conflicts
+566 nodes
+47934 propagations
+4 solutions
+0.02 seconds init time
+0.01 seconds opt time
+0.02 seconds search time
+0.00Mb base memory usage
+0.02Mb trail memory usage
+0.00Mb peak memory usage
+1489406304 random seed used
+
+4771 SAT variables
+1455 orig bin clauses
+356 orig tern clauses
+0 orig long clauses (avg. len. 0.00)
+159 learnt clauses (avg. len. 22.48)
+66986 SAT propagations
+266 back jumps
+5 natural restarts
+simplex = 0
+refactors = 0
+% Cumulative propagator statistics:
+%	#TT incons.: 0
+%	#TT prop.: 0
+% Cumulative propagator statistics:
+%	#TT incons.: 5
+%	#TT prop.: 87
+% Cumulative propagator statistics:
+%	#TT incons.: 0
+%	#TT prop.: 0
+% Cumulative propagator statistics:
+%	#TT incons.: 19
+%	#TT prop.: 700
+%	#TTEF incons.: 2
+%	#TTEF prop.: 61

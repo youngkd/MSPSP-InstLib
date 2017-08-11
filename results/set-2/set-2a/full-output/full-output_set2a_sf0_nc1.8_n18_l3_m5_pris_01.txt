@@ -1,0 +1,158 @@
+makespan = 164
+start times = [0, 0, 10, 39, 25, 13, 0, 47, 54, 69, 85, 94, 13, 94, 104, 123, 132, 139, 151, 164]
+assignment = [false, false, false, false, false, true, true, false, false, false, true, true, false, false, false, true, true, true, false, false, true, true, false, false, false, false, false, true, false, false, false, false, true, true, true, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, false, false, false, true, true, false, false, false, false, true, true, true, false, false, false, true, true, true, false, false, true, true, true, false, false, true, true, false, false, false, true, true, true, false, false, false, false, false, false, false]
+contribution = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, true, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, true, false, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, true, false, false, false, false, true, true, false, false, false, true, false, false, false, true, false, false, false, false, false, false, true, false, false, false, true, false, false, false, true, false, false, false, false, false, false, true, false, false, false, true, false, false, false, true, false, false, false, false, false, false, true, false, false, false, true, false, false, false, true, false, false, false, false, false, false, true, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, true, false, false, false, false, false, false, true, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, true, false, true, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+----------
+% time elapsed: 30 ms
+% Pruned 49993 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49937 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49956 learnt clauses
+% Pruned 49991 learnt clauses
+% Pruned 49990 learnt clauses
+% Pruned 49977 learnt clauses
+% Pruned 49955 learnt clauses
+% Pruned 49913 learnt clauses
+% Pruned 49990 learnt clauses
+% Pruned 49979 learnt clauses
+% Pruned 49974 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49995 learnt clauses
+% Pruned 49979 learnt clauses
+% Pruned 49993 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49992 learnt clauses
+% Pruned 49988 learnt clauses
+% Pruned 49956 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49962 learnt clauses
+% Pruned 49897 learnt clauses
+% Pruned 49989 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49941 learnt clauses
+% Pruned 49910 learnt clauses
+% Pruned 49991 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49969 learnt clauses
+% Pruned 49992 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49980 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49990 learnt clauses
+% Pruned 49995 learnt clauses
+% Pruned 49995 learnt clauses
+% Pruned 49935 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49992 learnt clauses
+% Pruned 49991 learnt clauses
+% Pruned 49993 learnt clauses
+% Pruned 49988 learnt clauses
+% Pruned 49992 learnt clauses
+% Pruned 49949 learnt clauses
+% Pruned 49938 learnt clauses
+% Pruned 49932 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49990 learnt clauses
+% Pruned 49989 learnt clauses
+% Pruned 49967 learnt clauses
+% Pruned 49966 learnt clauses
+% Pruned 49987 learnt clauses
+% Pruned 49990 learnt clauses
+% Pruned 49979 learnt clauses
+% Pruned 49988 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49985 learnt clauses
+% Pruned 49946 learnt clauses
+% Pruned 49938 learnt clauses
+% Pruned 49995 learnt clauses
+% Pruned 49983 learnt clauses
+% Pruned 49995 learnt clauses
+% Pruned 49995 learnt clauses
+% Pruned 49941 learnt clauses
+% Pruned 49939 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49969 learnt clauses
+% Pruned 49938 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49949 learnt clauses
+% Pruned 49995 learnt clauses
+% Pruned 49995 learnt clauses
+% Pruned 49990 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49948 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49992 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49955 learnt clauses
+% Pruned 49995 learnt clauses
+% Pruned 49959 learnt clauses
+% Pruned 49992 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49960 learnt clauses
+% Pruned 49955 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49995 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49989 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49992 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49965 learnt clauses
+% Pruned 49946 learnt clauses
+% Pruned 49939 learnt clauses
+% Pruned 49934 learnt clauses
+% Pruned 49930 learnt clauses
+% Pruned 49927 learnt clauses
+% Time limit exceeded!
+
+390 vars (0 no lits, 390 eager lits, 0 lazy lits)
+752 propagators
+5651845 conflicts
+12068932 nodes
+1476175222 propagations
+1 solutions
+0.03 seconds init time
+0.00 seconds opt time
+600.33 seconds search time
+0.00Mb base memory usage
+0.04Mb trail memory usage
+0.00Mb peak memory usage
+1489363223 random seed used
+
+11766 SAT variables
+2436 orig bin clauses
+667 orig tern clauses
+0 orig long clauses (avg. len. 0.00)
+54258 learnt clauses (avg. len. 18.73)
+3211478468 SAT propagations
+6252490 back jumps
+1 natural restarts
+simplex = 0
+refactors = 0
+% Cumulative propagator statistics:
+%	#TT incons.: 0
+%	#TT prop.: 34228
+% Cumulative propagator statistics:
+%	#TT incons.: 0
+%	#TT prop.: 0
+% Cumulative propagator statistics:
+%	#TT incons.: 0
+%	#TT prop.: 0
+% Cumulative propagator statistics:
+%	#TT incons.: 1
+%	#TT prop.: 184067
+%	#TTEF incons.: 31
+%	#TTEF prop.: 8789

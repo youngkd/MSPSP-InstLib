@@ -1,0 +1,3 @@
+instNum,optimal,LB,makespan,firstSol,UB,timeToFirstSol,runtime,nodes,propagations
+0,1,20,26,33,68,57,0.06,1273,213849
+0,1,20,32,41,68,51,0.34,6328,1863294
