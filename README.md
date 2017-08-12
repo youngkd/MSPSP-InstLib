@@ -71,15 +71,11 @@ we anticipate that the very small instances can be trivially solved.
 
 ## Instance Generator
 
-The instance generator was developed by Young *et al.* 2017 and it was originally created by Almeida *et al.* 2015.
-
-*To be completed*
+The instance generator provided here was developed by Young *et al.* 2017 and was originally created by Almeida *et al.* 2015. It can be found in `gen-inst/`.
 
 ## Solutions
 
-The full results found by Young *et al.* 2017 can be found in the `results/` directory. 
-
-*To be completed*
+The full results found by Young *et al.* 2017 can be found in the `results/` directory. These results were obtained using the MiniZinc model which can be found in the `models/` directory.
 
 ## References
 
