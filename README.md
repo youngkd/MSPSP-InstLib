@@ -14,8 +14,8 @@ Some additional untested instances (set 3) are also included in this library.
 ## Data Format
 
 Each instance is provided as an individual DataZinc file (dzn) which are 
-naturally compability with the modelling language MiniZinc. 
-New instances can be created in any desired format by editting the 
+naturally compatible with the modelling language MiniZinc. 
+New instances can be created in any desired format by editing the 
 instance generator as you see fit (refer to Python scripts in the `gen-inst/` directory).
 
 For a detailed description of the format within any one DataZinc 
@@ -73,9 +73,19 @@ we anticipate that the very small instances can be trivially solved.
 
 The instance generator provided here was developed by Young *et al.* 2017 and was originally created by Almeida *et al.* 2015. It can be found in `gen-inst/`.
 
+The full details of the implementation of the instance generator can be found in Almeida *et al.* 2015.
+
 ## Solutions
 
 The full results found by Young *et al.* 2017 can be found in the `results/` directory. These results were obtained using the MiniZinc model which can be found in the `models/` directory.
+A discussion of the model given here and the various formulations which were considered,
+can be found in Young *et al.* 2017.
+
+Together with the model used to achieve the final results provided, a series of other
+scripts have been included in the `models/support-scripts/` directory.
+These include shell scripts used to run the model across subsets of the data,
+a Python script to process the output data and 
+other assorted shell scripts.
 
 ## References
 
